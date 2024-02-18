@@ -1,5 +1,5 @@
 :root {
-    /* [COLORS] */
+  /* [COLORS] */
   --dark-blue-gray: #0e0f2a;
   --light-blue-gray: #404153;
   --light-purple: #deddf0;
@@ -7,4 +7,10 @@
   --black: #000;
   --white: #fff;
   --gray: #797979;
+
+  /* [TYPOGRAPHY] */
+  --ff-1: "Poppins", sans-serif;
+  --ff-2: "Roboto", sans-serif;
+  --fw-500: 500;
+  --fw-700: 700;
 }
