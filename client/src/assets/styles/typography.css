@@ -1,0 +1,48 @@
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--ff-1);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 4vw, 2rem);
+}
+
+h4 {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+p,
+a,
+button,
+input,
+textarea,
+select,
+label {
+  font-family: var(--ff-2);
+  font-weight: var(--fw-500);
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-weight: var(--fw-700);
+  border: none;
+  border-radius: 50px;
+}
