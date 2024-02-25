@@ -1,12 +1,13 @@
 :root {
   /* [--COLORS--] */
-  --dark-blue-gray: #0e0f2a;
-  --light-blue-gray: #404153;
+  --dark-purple-gray: #131219;
+  --light-purple-gray: #222029;
   --light-purple: #deddf0;
   --orange: #ff5400;
   --black: #000;
   --white: #fff;
   --gray: #797979;
+  --light-gray: #f3f3f3;
 
   /* [--TYPOGRAPHY--] */
   --ff-1: "Poppins", sans-serif;

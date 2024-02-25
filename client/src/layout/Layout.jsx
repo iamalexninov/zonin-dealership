@@ -1,18 +1,18 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 
 import { Navbar } from "../components/navbar/Navbar";
-import { Footer } from "../components/footer/Footer";
+// import { Footer } from "../components/footer/Footer";
 
-import { Home } from "../pages/home/Home";
-import { About } from "../pages/about/About";
-import { Catalogue } from "../pages/Catalogue/Catalogue";
-import { Reviews } from "../pages/reviews/Reviews";
-import { Blog } from "../pages/blog/Blog";
-import { Contact } from "../pages/contact/Contact";
-
-import { Login } from "../pages/auth/Login";
-import { Register } from "../pages/auth/Register";
-import { UserProfile } from "../pages/UserProfile/UserProfile";
+// import { Home } from "../pages/home/Home";
+// import { About } from "../pages/about/About";
+// import { Catalogue } from "../pages/Catalogue/Catalogue";
+// import { Reviews } from "../pages/reviews/Reviews";
+// import { Blog } from "../pages/blog/Blog";
+// import { Contact } from "../pages/contact/Contact";
+// 
+// import { Login } from "../pages/auth/Login";
+// import { Register } from "../pages/auth/Register";
+// import { UserProfile } from "../pages/UserProfile/UserProfile";
 
 export const Layout = () => {
   const location = useLocation();
@@ -21,8 +21,8 @@ export const Layout = () => {
 
   return (
     <>
-      {!hideNavbarFooter && <Navbar />}
-      <main>
+      <Navbar />
+      {/* <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/catalogue" element={<Catalogue />} />
@@ -34,8 +34,8 @@ export const Layout = () => {
           <Route path="/signin" element={<Login />} />
           <Route path="/signup" element={<Register />} />
         </Routes>
-      </main>
-      {!hideNavbarFooter && <Footer />}
+      </main> */}
+      {/* {!hideNavbarFooter && <Footer />} */}
     </>
   );
 };

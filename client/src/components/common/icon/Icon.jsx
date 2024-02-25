@@ -1,45 +1,39 @@
 import styles from "./style.module.css";
 
-import { MdLogin, MdLogout, MdEmail } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 import {
-  FaUser,
+  FaFacebookSquare,
+  FaTwitterSquare,
+  FaRegUserCircle,
+} from "react-icons/fa";
+import {
   FaRegClock,
-  FaBars,
-  FaRocket,
-  FaX,
-  FaCheck,
-  FaCartShopping,
   FaFacebookF,
   FaLinkedin,
-  FaPinterest,
   FaSquareXTwitter,
-  FaGoogle,
-  FaPhone,
-  FaLocationDot,
-  FaArrowRight,
-  FaArrowUpLong,
-  FaGasPump,
-  FaMinus,
-  FaPlus,
-  FaWrench,
-  FaLeaf,
-  FaArrowLeft,
+  FaSquareGithub,
 } from "react-icons/fa6";
-import { IoCarSport, IoCarSportSharp, IoStorefront } from "react-icons/io5";
-import { IoMdSettings, IoIosSpeedometer } from "react-icons/io";
-import { RiLockPasswordFill } from "react-icons/ri";
-import { TbWorldSearch } from "react-icons/tb";
-import { useScrollOnTop } from "../../../hooks/useScrollOnTop";
 
-export const Icon = ({ type, size = 20, onClick }) => {
-  const { scrollOnTop } = useScrollOnTop();
+// import { useScrollOnTop } from "../../../hooks/useScrollOnTop";
+import { useDynamicStyles } from "../../../hooks/useDynamicStyles";
+
+export const Icon = ({ type, size = 20, baseStyle, hoverStyle, onClick }) => {
+  // const { scrollOnTop } = useScrollOnTop();
+  const { useStyle, onMouseEnter, onMouseLeave } = useDynamicStyles(
+    baseStyle,
+    hoverStyle
+  );
+
   const iconComponents = {
     email: MdEmail,
     clock: FaRegClock,
-    user: FaUser,
+    user: FaRegUserCircle,
     facebook: FaFacebookF,
-    linkedin: FaLinkedin,
     twitter: FaSquareXTwitter,
+    linkedin: FaLinkedin,
+    github: FaSquareGithub,
+    facebookSquare: FaFacebookSquare,
+    twitterSquare: FaTwitterSquare,
   };
 
   const IconComponent = iconComponents[type] || null;
@@ -47,12 +41,18 @@ export const Icon = ({ type, size = 20, onClick }) => {
   const handleClick = () => {
     if (onClick) {
       onClick();
+      scrollOnTop();
     }
-    scrollOnTop();
   };
 
   return (
-    <div className={styles.icon} onClick={handleClick}>
+    <div
+      className={styles.icon}
+      style={useStyle}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+      onClick={handleClick}
+    >
       <IconComponent size={size} />
     </div>
   );

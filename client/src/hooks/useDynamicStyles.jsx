@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const useStyles = (basicStyle, hoverStyle) => {
+export const useDynamicStyles = (baseStyle, hoverStyle) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -11,7 +11,7 @@ const useStyles = (basicStyle, hoverStyle) => {
     setIsHovered(false);
   };
 
-  const useStyle = isHovered ? hoverStyle : basicStyle;
+  const useStyle = isHovered ? hoverStyle : baseStyle;
 
   return {
     useStyle,
@@ -19,5 +19,3 @@ const useStyles = (basicStyle, hoverStyle) => {
     onMouseLeave: handleMouseLeave,
   };
 };
-
-export default useStyles;

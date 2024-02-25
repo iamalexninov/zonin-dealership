@@ -1,5 +1,10 @@
-function App() {
-  <div>Zonin</div>;
-}
+import { BrowserRouter as Router } from "react-router-dom";
+import { Layout } from "./layout/Layout";
 
-export default App;
+export const App = () => {
+  return (
+    <Router>
+      <Layout />
+    </Router>
+  );
+};
