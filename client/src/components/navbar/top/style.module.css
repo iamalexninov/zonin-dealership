@@ -3,64 +3,21 @@
   background-color: var(--light-purple-gray);
 }
 
-.info {
-  display: none;
-}
-
 .container,
-.auth_and_socials,
-.socials,
-.auth,
-.auth_links {
+.socials_auth {
   display: flex;
   align-items: center;
 }
 
 .container,
-.auth_and_socials {
+.socials_auth {
   justify-content: space-between;
   width: 100%;
 }
 
-.text {
-  color: var(--white);
-}
-
-.auth_and_socials {
-  gap: 50px;
-}
-
-.socials,
-.auth {
-  gap: 10px;
-}
-
-.separator {
-  margin-inline: 8px;
-  background: var(--orange);
-  width: 2px;
-  height: 1.3rem;
-}
-
 @media only screen and (min-width: 767px) {
-  .info,
-  .info_email,
-  .info_time {
-    display: flex;
-    align-items: center;
-  }
-
-  .info {
-    width: 100%;
-    gap: 15px;
-  }
-
-  .info_email,
-  .info_time {
-    gap: 5px;
-  }
-
-  .auth_and_socials {
+  .socials_auth {
     justify-content: flex-end;
+    gap: 30px;
   }
 }
