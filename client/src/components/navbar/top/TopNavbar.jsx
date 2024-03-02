@@ -37,10 +37,6 @@ export const TopNavbar = () => {
       type: "linkedin",
       styles: iconLinkStyles,
     },
-    {
-      type: "github",
-      styles: iconLinkStyles,
-    },
   ];
 
   return (
@@ -80,7 +76,6 @@ export const TopNavbar = () => {
             <div className={styles.auth}>
               <Icon
                 type="user"
-                size={25}
                 baseStyle={unchangeStyles}
                 hoverStyle={unchangeStyles}
               />

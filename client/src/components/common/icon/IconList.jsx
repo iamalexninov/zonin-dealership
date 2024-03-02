@@ -5,7 +5,6 @@ export const IconList = ({ type, styles }) => {
     <li>
       <Icon
         type={type}
-        size={25}
         baseStyle={styles.baseStyle}
         hoverStyle={styles.hoverStyle}
       />
