@@ -2,7 +2,7 @@ import styles from "./style.module.css";
 import { Wrapper } from "../../common/wrapper/Wrapper";
 import { Icon } from "../../common/icon/Icon";
 import { IconList } from "../../common/icon/IconList";
-import { HrefTag } from "../../common/link/Link";
+import { HrefTag } from "../../common/Link";
 import { dynamicStyles } from "../../../utils/dynamicStyles";
 
 export const TopNavbar = () => {

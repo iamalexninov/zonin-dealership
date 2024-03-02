@@ -1,0 +1,13 @@
+.bottom_nav {
+  position: relative;
+  padding-block: 30px;
+  background-color: var(--dark-purple-gray);
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}

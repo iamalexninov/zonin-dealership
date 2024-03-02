@@ -1,0 +1,16 @@
+.link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 15px 5px;
+  border-bottom: 1px solid var(--gray);
+  transition: var(--tr-out);
+}
+
+.link:hover {
+  cursor: pointer;
+  padding-inline: 15px;
+  background-color: var(--dark-purple-gray);
+  border-radius: 5px;
+  transition: var(--tr-in);
+}

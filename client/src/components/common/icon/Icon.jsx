@@ -1,10 +1,14 @@
 import styles from "./style.module.css";
 
-import { MdEmail } from "react-icons/md";
+import { MdEmail, MdOutlinePostAdd, MdContacts } from "react-icons/md";
+import { CgClose } from "react-icons/cg";
 import {
   FaFacebookSquare,
   FaTwitterSquare,
   FaRegUserCircle,
+  FaHome,
+  FaInfoCircle,
+  FaComments,
 } from "react-icons/fa";
 import {
   FaRegClock,
@@ -34,6 +38,12 @@ export const Icon = ({ type, size = 20, baseStyle, hoverStyle, onClick }) => {
     github: FaSquareGithub,
     facebookSquare: FaFacebookSquare,
     twitterSquare: FaTwitterSquare,
+    home: FaHome,
+    info: FaInfoCircle,
+    reviews: FaComments,
+    blog: MdOutlinePostAdd,
+    contact: MdContacts,
+    close: CgClose,
   };
 
   const IconComponent = iconComponents[type] || null;
@@ -41,7 +51,7 @@ export const Icon = ({ type, size = 20, baseStyle, hoverStyle, onClick }) => {
   const handleClick = () => {
     if (onClick) {
       onClick();
-      scrollOnTop();
+      // scrollOnTop();
     }
   };
 
