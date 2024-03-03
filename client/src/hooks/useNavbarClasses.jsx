@@ -7,6 +7,8 @@ export const useNavbarClasses = () => {
     const handleScroll = () => {
       if (window.scrollY >= 150) {
         setScrolled(true);
+      } else {
+        setScrolled(false);
       }
     };
 

@@ -1,8 +1,20 @@
 .bottom_nav {
-  position: relative;
-  padding-block: 30px;
-  background-color: var(--dark-purple-gray);
-  height: 100vh;
+  position: fixed;
+  width: 100%;
+  padding-block: 15px;
+}
+
+.bottom_nav_unscrolled {
+  top: 40px;
+  background-color: transparent;
+  transition: all 0.6s ease-in;
+}
+
+.bottom_nav_scrolled {
+  top: 0;
+  background-color: var(--white);
+  transition: all 0.6s ease-out;
+  border-bottom: 2px solid var(--gray);
 }
 
 .container {
@@ -10,4 +22,9 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+.open_mobile_menu {
+  position: relative;
+  z-index: 2;
 }

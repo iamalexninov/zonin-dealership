@@ -3,12 +3,12 @@ import { HrefTag } from "../../../common/Link";
 import { dynamicStyles } from "../../../../utils/dynamicStyles";
 import { Icon } from "../../../common/icon/Icon";
 
-export const NavbarItem = ({ path, content, icon }) => {
+export const NavbarItem = ({ path, content, icon, scrolled }) => {
   const linkStyles = {
     ...dynamicStyles,
     baseStyle: {
       ...dynamicStyles.baseStyle,
-      color: "var(--white)",
+      color: scrolled ? "var(--black)" : "var(--white)",
       textTransform: "uppercase",
     },
     hoverStyle: {
@@ -31,19 +31,20 @@ export const NavbarItem = ({ path, content, icon }) => {
   };
 
   return (
-    <li className={styles.link}>
-      <Icon
-        type={icon}
-        size={25}
-        baseStyle={iconStyles.baseStyle}
-        hoverStyle={iconStyles.hoverStyle}
-      />
-      <HrefTag
-        path={path}
-        content={content}
-        baseStyle={linkStyles.baseStyle}
-        hoverStyle={linkStyles.hoverStyle}
-      />
-    </li>
+    <HrefTag
+      path={path}
+      baseStyle={linkStyles.baseStyle}
+      hoverStyle={linkStyles.hoverStyle}
+    >
+      <li className={styles.link}>
+        <Icon
+          type={icon}
+          size={25}
+          baseStyle={iconStyles.baseStyle}
+          hoverStyle={iconStyles.hoverStyle}
+        />
+        {content}
+      </li>
+    </HrefTag>
   );
 };

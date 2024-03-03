@@ -5,7 +5,7 @@ export const Navbar = () => {
   return (
     <header>
       <TopNavbar />
-      {/* <BottomNavbar /> */}
+      <BottomNavbar />
     </header>
   );
 };

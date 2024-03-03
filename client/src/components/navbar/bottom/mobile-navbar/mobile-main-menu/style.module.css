@@ -1,0 +1,17 @@
+.menu_title {
+  color: var(--gray);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.menu .btn {
+  margin-block: 10px 50px;
+}

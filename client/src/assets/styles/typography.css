@@ -30,10 +30,11 @@ input,
 textarea,
 select,
 label,
-span {
+span,
+i {
   font-family: var(--ff-2);
   font-weight: var(--fw-500);
-  font-size: clamp(0.875rem, 2vw, 1.15rem);
+  font-size: clamp(0.875rem, 2vw, 1rem);
   line-height: 1.5;
 }
 

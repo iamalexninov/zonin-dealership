@@ -1,6 +1,7 @@
 import styles from "./style.module.css";
 
 import { MdEmail, MdOutlinePostAdd, MdContacts } from "react-icons/md";
+import { IoSearchOutline } from "react-icons/io5";
 import { CgClose } from "react-icons/cg";
 import {
   FaFacebookSquare,
@@ -9,6 +10,7 @@ import {
   FaHome,
   FaInfoCircle,
   FaComments,
+  FaEdit,
 } from "react-icons/fa";
 import {
   FaRegClock,
@@ -16,6 +18,7 @@ import {
   FaLinkedin,
   FaSquareXTwitter,
   FaSquareGithub,
+  FaBars,
 } from "react-icons/fa6";
 
 // import { useScrollOnTop } from "../../../hooks/useScrollOnTop";
@@ -44,6 +47,9 @@ export const Icon = ({ type, size = 20, baseStyle, hoverStyle, onClick }) => {
     blog: MdOutlinePostAdd,
     contact: MdContacts,
     close: CgClose,
+    open: FaBars,
+    search: IoSearchOutline,
+    edit: FaEdit,
   };
 
   const IconComponent = iconComponents[type] || null;
