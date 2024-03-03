@@ -1,6 +1,6 @@
 .btn {
   color: #fff;
-  padding: 10px 30px;
+  padding: 20px 30px;
   border: none;
   border-radius: 5px;
   transition: 998ms;
@@ -15,7 +15,7 @@
 
 .btn:hover {
   transition: 998ms;
-  padding: 10px 44px;
+  padding: 20px 44px;
   transform: translateY(-0px);
   background-color: transparent;
 }

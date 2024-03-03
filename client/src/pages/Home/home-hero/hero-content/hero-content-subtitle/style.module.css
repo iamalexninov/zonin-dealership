@@ -1,0 +1,15 @@
+.subtitle {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.line {
+  width: 5px;
+  background-color: var(--orange);
+}
+
+.subtitle h2 {
+  text-transform: uppercase;
+  color: var(--orange);
+}

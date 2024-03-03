@@ -1,7 +1,9 @@
-import React from 'react'
+import { HomeHero } from "./home-hero/HomeHero";
 
 export const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <>
+      <HomeHero />
+    </>
+  );
+};

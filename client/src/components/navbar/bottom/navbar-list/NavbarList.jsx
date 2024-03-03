@@ -4,7 +4,7 @@ import { Icon } from "../../../common/icon/Icon";
 
 export const NavbarList = ({ items, toggleMenu, scrolled }) => {
   const openMobileMenuStyle = {
-    color: "var(--white)",
+    color: scrolled ? "var(--black)" : "var(--white)",
   };
 
   return (

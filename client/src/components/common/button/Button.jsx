@@ -1,7 +1,13 @@
 import styles from "./style.module.css";
 import { useDynamicStyles } from "../../../hooks/useDynamicStyles";
 
-export const Button = ({ content, baseStyle, hoverStyle, onClick }) => {
+export const Button = ({
+  content,
+  children,
+  baseStyle,
+  hoverStyle,
+  onClick,
+}) => {
   const { useStyle, onMouseEnter, onMouseLeave } = useDynamicStyles(
     baseStyle,
     hoverStyle
@@ -21,7 +27,7 @@ export const Button = ({ content, baseStyle, hoverStyle, onClick }) => {
       onClick={onClick}
       className={styles.btn}
     >
-      {content}
+      {content || children}
     </button>
   );
 };

@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { Navbar } from "../components/navbar/Navbar";
 // import { Footer } from "../components/footer/Footer";
 
-// import { Home } from "../pages/home/Home";
+import { Home } from "../pages/Home/Home";
 // import { About } from "../pages/about/About";
 // import { Catalogue } from "../pages/Catalogue/Catalogue";
 // import { Reviews } from "../pages/reviews/Reviews";
@@ -22,19 +22,19 @@ export const Layout = () => {
   return (
     <>
       <Navbar />
-      {/* <main>
+      <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/catalogue" element={<Catalogue />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/reviews" element={<Reviews />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/profile" element={<UserProfile />} />
-          <Route path="/signin" element={<Login />} />
-          <Route path="/signup" element={<Register />} />
+          {/* <Route path="/catalogue" element={<Catalogue />} /> */}
+          {/* <Route path="/about" element={<About />} /> */}
+          {/* <Route path="/reviews" element={<Reviews />} /> */}
+          {/* <Route path="/blog" element={<Blog />} /> */}
+          {/* <Route path="/contact" element={<Contact />} /> */}
+          {/* <Route path="/profile" element={<UserProfile />} /> */}
+          {/* <Route path="/signin" element={<Login />} /> */}
+          {/* <Route path="/signup" element={<Register />} /> */}
         </Routes>
-      </main> */}
+      </main>
       {/* {!hideNavbarFooter && <Footer />} */}
     </>
   );
