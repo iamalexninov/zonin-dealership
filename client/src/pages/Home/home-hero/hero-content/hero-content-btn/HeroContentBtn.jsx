@@ -1,7 +1,6 @@
-import { Button } from "../../../../../components/common/button/Button";
-import { Icon } from "../../../../../components/common/icon/Icon";
-import { HrefTag } from "../../../../../components/common/Link";
 import { dynamicStyles } from "../../../../../utils/dynamicStyles";
+import { HrefTag } from "../../../../../components/common/Link";
+import { Button } from "../../../../../components/common/button/Button";
 
 export const HeroContentBtn = () => {
   const styles = {

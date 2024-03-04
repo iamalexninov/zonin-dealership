@@ -20,6 +20,7 @@ import {
   FaSquareGithub,
   FaBars,
   FaPlus,
+  FaCar,
 } from "react-icons/fa6";
 
 // import { useScrollOnTop } from "../../../hooks/useScrollOnTop";
@@ -52,6 +53,7 @@ export const Icon = ({ type, size = 20, baseStyle, hoverStyle, onClick }) => {
     search: IoSearchOutline,
     edit: FaEdit,
     plus: FaPlus,
+    car: FaCar,
   };
 
   const IconComponent = iconComponents[type] || null;

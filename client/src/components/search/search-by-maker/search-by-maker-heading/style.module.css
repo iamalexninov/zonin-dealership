@@ -1,0 +1,35 @@
+.heading_container,
+.heading,
+.title {
+  display: flex;
+}
+
+.heading_container {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.heading {
+  align-items: center;
+  gap: 8px;
+}
+
+.title {
+  align-items: center;
+  gap: 2px;
+  text-transform: uppercase;
+}
+
+.vehicle {
+  font-family: var(--ff-2);
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  color: var(--orange);
+}
+
+@media only screen and (min-width:481px) {
+  .heading_container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

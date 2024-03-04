@@ -1,6 +1,6 @@
 .btn {
   color: #fff;
-  padding: 20px 30px;
+  padding: 15px 30px;
   border: none;
   border-radius: 5px;
   transition: 998ms;
@@ -11,11 +11,13 @@
   justify-content: center;
   cursor: pointer;
   text-transform: uppercase;
+  width: 100%;
+  max-width: 250px;
 }
 
 .btn:hover {
   transition: 998ms;
-  padding: 20px 44px;
+  padding: 15px 44px;
   transform: translateY(-0px);
   background-color: transparent;
 }

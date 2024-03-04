@@ -19,15 +19,7 @@ export const NavbarItem = ({ path, content, icon, scrolled }) => {
   };
 
   const iconStyles = {
-    ...dynamicStyles,
-    baseStyle: {
-      ...dynamicStyles.baseStyle,
-      color: "var(--light-gray)",
-    },
-    hoverStyle: {
-      ...dynamicStyles.hoverStyle,
-      color: "var(--light-gray)",
-    },
+    color: "var(--light-purple-gray)",
   };
 
   return (
