@@ -11,6 +11,10 @@ import {
   FaInfoCircle,
   FaComments,
   FaEdit,
+  FaTools,
+  FaMoneyBill,
+  FaExchangeAlt,
+  FaRoad,
 } from "react-icons/fa";
 import {
   FaRegClock,
@@ -54,6 +58,10 @@ export const Icon = ({ type, size = 20, baseStyle, hoverStyle, onClick }) => {
     edit: FaEdit,
     plus: FaPlus,
     car: FaCar,
+    tools: FaTools,
+    money: FaMoneyBill,
+    exchange: FaExchangeAlt,
+    road: FaRoad,
   };
 
   const IconComponent = iconComponents[type] || null;
