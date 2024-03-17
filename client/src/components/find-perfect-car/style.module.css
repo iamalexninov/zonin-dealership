@@ -1,0 +1,41 @@
+.perfect_car {
+  min-height: 350px;
+  background-image: url("../../assets/images/backgrounds/paralax.jpg");
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.575);
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.perfect_car_items {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 50px;
+  padding-block: 50px;
+}
+
+.numbers,
+.title {
+  text-shadow: var(--shadow);
+}
+
+.numbers {
+  color: var(--orange);
+  margin-bottom: 10px;
+}
+
+.title {
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+@media only screen and (min-width: 767px) {
+  .perfect_car_items {
+    flex-direction: row;
+    gap: 80px;
+  }
+}
