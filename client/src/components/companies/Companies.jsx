@@ -4,6 +4,7 @@ import bosch from "../../assets/images/companies/bosch.png";
 import mahle from "../../assets/images/companies/mahle.png";
 import fram from "../../assets/images/companies/fram.png";
 import swag from "../../assets/images/companies/swag.png";
+import lmi from '../../assets/images/companies/lmi.png'
 import { Wrapper } from "../common/wrapper/Wrapper";
 import { CompaniesList } from "./CompaniesList/CompaniesList";
 
@@ -29,6 +30,10 @@ export const Companies = () => {
       src: swag,
       alt: "Swag Banner",
     },
+    {
+      src:lmi,
+      alt:'Lemförder Banner'
+    }
   ];
 
   return (
