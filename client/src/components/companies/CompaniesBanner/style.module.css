@@ -1,0 +1,24 @@
+.item,
+.img {
+  cursor: pointer;
+  width: 100%;
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+.item {
+  height: 150px;
+}
+
+.img {
+  padding: 20px;
+  height: inherit;
+  object-fit: contain;
+  filter: grayscale(1);
+  transition: var(--tr-in);
+}
+
+.img:hover {
+  filter: grayscale(0);
+  transition: var(--tr-out);
+}
