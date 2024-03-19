@@ -25,6 +25,8 @@ import {
   FaBars,
   FaPlus,
   FaCar,
+  FaPhone,
+  FaLocationDot,
 } from "react-icons/fa6";
 
 // import { useScrollOnTop } from "../../../hooks/useScrollOnTop";
@@ -62,6 +64,8 @@ export const Icon = ({ type, size = 20, baseStyle, hoverStyle, onClick }) => {
     money: FaMoneyBill,
     exchange: FaExchangeAlt,
     road: FaRoad,
+    phone:FaPhone,
+    location: FaLocationDot,
   };
 
   const IconComponent = iconComponents[type] || null;

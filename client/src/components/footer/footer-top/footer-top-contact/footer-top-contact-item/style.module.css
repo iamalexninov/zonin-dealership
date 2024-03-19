@@ -1,0 +1,19 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  padding: 15px;
+  background-color: var(--orange);
+  border-radius: 5px;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.desc {
+  color: var(--light-gray);
+}
