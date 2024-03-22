@@ -1,6 +1,10 @@
+.subscribe {
+  padding: 60px 40px 40px 40px;
+}
+
 .title {
   color: var(--white);
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .field {

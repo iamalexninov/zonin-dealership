@@ -1,3 +1,19 @@
 .footer_top {
-  padding-block: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+@media only screen and (min-width:1080px) {
+  .footer_top {
+    align-items: normal;
+    flex-direction: row;
+  }
 }

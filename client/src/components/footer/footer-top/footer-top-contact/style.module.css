@@ -1,5 +1,7 @@
 .contacts {
   width: 100%;
-  max-width: 300px;
+  max-width: 600px;
+  padding: 60px 40px 40px 40px;
   color: var(--white);
+  background-color: var(--dark-purple-gray);
 }

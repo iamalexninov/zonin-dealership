@@ -31,7 +31,7 @@ export const FooterTopContact = () => {
       type: "h4",
       text: "Contact Us",
       style: {
-        marginBottom: "10px",
+        marginBottom: "20px",
       },
     },
     paragraph: {

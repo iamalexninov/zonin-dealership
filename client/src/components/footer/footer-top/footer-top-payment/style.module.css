@@ -1,0 +1,25 @@
+.payment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+  width: 100%;
+  max-width: 750px;
+  text-align: center;
+  background-color: var(--dark-purple-gray);
+}
+
+.paragraph {
+  color: var(--white);
+  max-width: 300px;
+}
+
+@media only screen and (min-width: 481px) {
+  .payment {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: left;
+  }
+}

@@ -9,10 +9,14 @@ export const FooterTop = () => {
   return (
     <div className={styles.footer_top}>
       <FooterTopContact />
-      <FooterTopInfo />
-      <FooterTopQuickLinks />
-      <FooterTopSubscribe />
-      <FooterTopPayment />
+      <div>
+        <div className={styles.container}>
+          <FooterTopInfo />
+          <FooterTopQuickLinks />
+          <FooterTopSubscribe />
+        </div>
+        <FooterTopPayment />
+      </div>
     </div>
   );
 };
