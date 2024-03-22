@@ -1,0 +1,10 @@
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.social {
+    padding: 15px;
+    border-radius: 3px;
+}

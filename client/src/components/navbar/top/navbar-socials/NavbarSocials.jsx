@@ -1,6 +1,6 @@
 import styles from "./style.module.css";
 import { dynamicStyles } from "../../../../utils/dynamicStyles";
-import { IconList } from "../../../common/icon/IconList";
+import { NavbarSocialsList } from "./NavbarSocialsList";
 
 export const NavbarSocials = () => {
   const iconStyles = {
@@ -33,10 +33,8 @@ export const NavbarSocials = () => {
   ];
 
   return (
-    <ul className={styles.socials}>
-      {mockdata.map((icon) => (
-        <IconList type={icon.type} styles={icon.styles} key={icon.type} />
-      ))}
-    </ul>
+    <>
+      <NavbarSocialsList socials={mockdata} />
+    </>
   );
 };

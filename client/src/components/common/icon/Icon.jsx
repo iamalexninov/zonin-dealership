@@ -1,11 +1,18 @@
 import styles from "./style.module.css";
 
-import { MdEmail, MdOutlinePostAdd, MdContacts } from "react-icons/md";
+import {
+  MdEmail,
+  MdOutlinePostAdd,
+  MdContacts,
+  MdKeyboardArrowRight,
+  MdOutlineKeyboardArrowUp,
+} from "react-icons/md";
 import { IoSearchOutline } from "react-icons/io5";
 import { CgClose } from "react-icons/cg";
 import {
   FaFacebookSquare,
   FaTwitterSquare,
+  FaTwitter,
   FaRegUserCircle,
   FaHome,
   FaInfoCircle,
@@ -15,12 +22,12 @@ import {
   FaMoneyBill,
   FaExchangeAlt,
   FaRoad,
+  FaPinterestP,
 } from "react-icons/fa";
 import {
   FaRegClock,
   FaFacebookF,
   FaLinkedin,
-  FaSquareXTwitter,
   FaSquareGithub,
   FaBars,
   FaPlus,
@@ -44,8 +51,9 @@ export const Icon = ({ type, size = 20, baseStyle, hoverStyle, onClick }) => {
     clock: FaRegClock,
     user: FaRegUserCircle,
     facebook: FaFacebookF,
-    twitter: FaSquareXTwitter,
+    twitter: FaTwitter,
     linkedin: FaLinkedin,
+    pinterest: FaPinterestP,
     github: FaSquareGithub,
     facebookSquare: FaFacebookSquare,
     twitterSquare: FaTwitterSquare,
@@ -64,8 +72,10 @@ export const Icon = ({ type, size = 20, baseStyle, hoverStyle, onClick }) => {
     money: FaMoneyBill,
     exchange: FaExchangeAlt,
     road: FaRoad,
-    phone:FaPhone,
+    phone: FaPhone,
     location: FaLocationDot,
+    arrowRight: MdKeyboardArrowRight,
+    arrowUp: MdOutlineKeyboardArrowUp,
   };
 
   const IconComponent = iconComponents[type] || null;
