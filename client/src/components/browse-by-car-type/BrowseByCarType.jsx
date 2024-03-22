@@ -5,9 +5,9 @@ import sedan from "../../assets/images/car-types/sedan.png";
 import station_wagon from "../../assets/images/car-types/station-wagon.png";
 import suv from "../../assets/images/car-types/suv.png";
 
-import { BrowseByCarTypeHeading } from "./browse-by-car-type-heading/BrowseByCarTypeHeading";
 import { BrowseByCarTypeList } from "./browse-by-car-type-list/BrowseByCarTypeList";
 import { Wrapper } from "../common/wrapper/Wrapper";
+import { SectionIntroduction } from "../common/SectionIntroduction";
 
 export const BrowseByCarType = () => {
   const mockdata = [
@@ -33,11 +33,26 @@ export const BrowseByCarType = () => {
     },
   ];
 
+  const sectionContent = {
+    container: {
+      style: {
+        marginBottom: "50px",
+      },
+    },
+    title: {
+      type: "h3",
+      text: "Browse By Car Type",
+    },
+    subtitle: {
+      text: "categories",
+    },
+  };
+
   return (
     <section className={styles.browse}>
       <Wrapper>
         <div className={styles.container}>
-          <BrowseByCarTypeHeading />
+          <SectionIntroduction content={sectioncontent} />
           <BrowseByCarTypeList items={mockdata} />
         </div>
       </Wrapper>

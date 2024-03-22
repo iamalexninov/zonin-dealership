@@ -1,5 +1,6 @@
-import { FooterTopContactList } from "./footer-top-contact-list/FooterTopContactList";
 import styles from "./style.module.css";
+import { SectionIntroduction } from "../../../common/SectionIntroduction";
+import { FooterTopContactList } from "./footer-top-contact-list/FooterTopContactList";
 
 export const FooterTopContact = () => {
   const mockdata = [
@@ -20,8 +21,13 @@ export const FooterTopContact = () => {
     },
   ];
 
+  const sectionContent = {
+    
+  }
+
   return (
     <div className={styles.contacts}>
+      <SectionIntroduction content={}/>
       <h4 className={styles.title}>Contact Us</h4>
       <p className={styles.description}>
         There are many variations of passes of Lorem ipsum available, but the
