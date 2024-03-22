@@ -46,7 +46,7 @@ export const SearchByPopularBrands = () => {
   return (
     <>
       {mockdata.map((maker) => (
-        <img src={maker.img} alt={maker.alt} />
+        <img src={maker.img} alt={maker.alt} key={maker.alt}/>
       ))}
     </>
   );

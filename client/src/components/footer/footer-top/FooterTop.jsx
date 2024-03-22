@@ -1,6 +1,6 @@
 import { FooterTopContact } from "./footer-top-contact/FooterTopContact";
 import { FooterTopInfo } from "./footer-top-info/FooterTopInfo";
-import { FooterTopLinks } from "./footer-top-links/FooterTopLinks";
+import { FooterTopQuickLinks } from "./footer-top-quick-links/FooterTopQuickLinks";
 import { FooterTopPayment } from "./footer-top-payment/FooterTopPayment";
 import { FooterTopSubscribe } from "./footer-top-subscribe/FooterTopSubscribe";
 import styles from "./style.module.css";
@@ -10,7 +10,7 @@ export const FooterTop = () => {
     <div className={styles.footer_top}>
       <FooterTopContact />
       <FooterTopInfo />
-      <FooterTopLinks />
+      <FooterTopQuickLinks />
       <FooterTopSubscribe />
       <FooterTopPayment />
     </div>

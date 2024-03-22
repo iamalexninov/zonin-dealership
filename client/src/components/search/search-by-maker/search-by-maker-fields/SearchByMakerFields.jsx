@@ -58,7 +58,8 @@ export const SearchByMakerFields = () => {
   return (
     <div className={styles.fields_container}>
       {mockdata.map((item) => (
-        <div className={styles.field}>
+        // TODO: change the key
+        <div className={styles.field} key={item.label}>
           <label className={styles.field_label}>{item.label}</label>
           <select className={styles.field_type}>
             {item.options.map((option, index) => (
