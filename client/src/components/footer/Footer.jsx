@@ -9,9 +9,9 @@ export const Footer = () => {
       <Wrapper>
         <div className={styles.container}>
           <FooterTop />
-          <FooterBottom />
         </div>
       </Wrapper>
+      <FooterBottom />
     </section>
   );
 };

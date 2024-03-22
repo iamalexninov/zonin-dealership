@@ -1,0 +1,19 @@
+.footer_bottom {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: var(--dark-purple-gray);
+}
+
+.paragraph {
+  color: var(--white);
+}
+
+.icon_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
