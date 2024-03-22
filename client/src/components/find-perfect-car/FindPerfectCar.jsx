@@ -1,6 +1,6 @@
 import styles from "./style.module.css";
 import { Wrapper } from "../common/wrapper/Wrapper";
-import { FindPerfectCarItem } from "./FindPerfectCarItem";
+import { FindPerfectCarList } from "./FindPerfectCarList";
 
 export const FindPerfectCar = () => {
   const mockdata = [
@@ -26,10 +26,8 @@ export const FindPerfectCar = () => {
     <section className={styles.perfect_car}>
       <Wrapper>
         <div className={styles.perfect_car_items}>
-        {mockdata.map((item) => (
-            <FindPerfectCarItem key={item.title} numbers={item.numbers} title={item.title}/>
-            ))}
-            </div>
+          <FindPerfectCarList items={mockdata} />
+        </div>
       </Wrapper>
     </section>
   );

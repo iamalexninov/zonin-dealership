@@ -3,8 +3,7 @@ import mercedes from "../../../assets/images/posters/services-mercedes.png";
 import { ServiceContentItem } from "./ServiceContentItem";
 
 export const ServiceContent = () => {
-  // TODO: Change them later
-  const rightcontentmockdata = [
+  const maintenanceAndAssistance = [
     {
       icon: "tools",
       title: "Vehicle Maintenance Service",
@@ -17,7 +16,7 @@ export const ServiceContent = () => {
     },
   ];
 
-  const leftcontentmockdata = [
+  const tradeInAndTestDrive = [
     {
       icon: "exchange",
       title: "Trade-In Evaluation",
@@ -33,7 +32,7 @@ export const ServiceContent = () => {
   return (
     <div className={styles.content}>
       <div className={styles.content_right}>
-        {rightcontentmockdata.map((item) => (
+        {maintenanceAndAssistance.map((item) => (
           <ServiceContentItem
             key={item.icon}
             icon={item.icon}
@@ -44,7 +43,7 @@ export const ServiceContent = () => {
       </div>
       <img className={styles.img} src={mercedes} alt="Mercedes Poster" />
       <div className={styles.content_left}>
-        {leftcontentmockdata.map((item) => (
+        {tradeInAndTestDrive.map((item) => (
           <ServiceContentItem
             key={item.icon}
             icon={item.icon}

@@ -52,7 +52,7 @@ export const BrowseByCarType = () => {
     <section className={styles.browse}>
       <Wrapper>
         <div className={styles.container}>
-          <SectionIntroduction content={sectioncontent} />
+          <SectionIntroduction content={sectionContent} />
           <BrowseByCarTypeList items={mockdata} />
         </div>
       </Wrapper>

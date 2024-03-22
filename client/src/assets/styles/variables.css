@@ -7,7 +7,8 @@
   --black: #000;
   --white: #fff;
   --gray: #797979;
-  --light-gray: #e7e6e652;
+  --light-gray: #e7e6e67e;
+  --blue-gray: #a7adbab5;
 
   /* [--TYPOGRAPHY--] */
   --ff-1: "Poppins", sans-serif;
