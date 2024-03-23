@@ -1,5 +1,6 @@
 const express = require("express");
+const { SERVER_PORT } = require("./config/constants");
 
 const app = express();
 
-app.listen(5000, () => console.log("Server On.."));
+app.listen(SERVER_PORT, () => console.log("Server On.."));
