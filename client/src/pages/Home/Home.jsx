@@ -5,6 +5,7 @@ import { FindPerfectCar } from "../../components/find-perfect-car/FindPerfectCar
 import { BrowseByCarType } from "../../components/browse-by-car-type/BrowseByCarType";
 import { DownloadApp } from "../../components/download-app/DownloadApp";
 import { Companies } from "../../components/companies/Companies";
+import { LatestCars } from "../../components/latest-cars/LatestCars";
 
 export const Home = () => {
   return (
@@ -14,7 +15,7 @@ export const Home = () => {
       <Service />
       <FindPerfectCar />
       <BrowseByCarType />
-      {/* TODO: Add Latest Cars Section here */}
+      <LatestCars />
       <DownloadApp />
       <Companies />
     </>

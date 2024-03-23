@@ -5,7 +5,7 @@ import { Navbar } from "../components/navbar/Navbar";
 
 import { Home } from "../pages/Home/Home";
 import { Footer } from "../components/footer/Footer";
-// import { About } from "../pages/about/About";
+import { About } from "../pages/About/About";
 // import { Catalogue } from "../pages/Catalogue/Catalogue";
 // import { Reviews } from "../pages/reviews/Reviews";
 // import { Blog } from "../pages/blog/Blog";
@@ -27,7 +27,7 @@ export const Layout = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           {/* <Route path="/catalogue" element={<Catalogue />} /> */}
-          {/* <Route path="/about" element={<About />} /> */}
+          <Route path="/about" element={<About />} />
           {/* <Route path="/reviews" element={<Reviews />} /> */}
           {/* <Route path="/blog" element={<Blog />} /> */}
           {/* <Route path="/contact" element={<Contact />} /> */}

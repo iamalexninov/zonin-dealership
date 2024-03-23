@@ -4,8 +4,12 @@ export const SectionIntroduction = ({ content }) => {
     textTransform: "uppercase",
   };
 
+  const containerStyle = {
+    style: !!content.container ? content.container.style : null,
+  };
+
   return (
-    <div style={!!content.container && content.container.style}>
+    <div style={containerStyle.style}>
       {!!content.subtitle && (
         <h4 style={subtitleStyle}>{content.subtitle.text}</h4>
       )}
