@@ -23,6 +23,7 @@ import {
   FaExchangeAlt,
   FaRoad,
   FaPinterestP,
+  FaCheck,
 } from "react-icons/fa";
 import {
   FaRegClock,
@@ -76,6 +77,7 @@ export const Icon = ({ type, size = 20, baseStyle, hoverStyle, onClick }) => {
     location: FaLocationDot,
     arrowRight: MdKeyboardArrowRight,
     arrowUp: MdOutlineKeyboardArrowUp,
+    check: FaCheck,
   };
 
   const IconComponent = iconComponents[type] || null;
