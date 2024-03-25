@@ -2,6 +2,7 @@ import { Hero } from "../../components/hero/Hero";
 import { Companies } from "../../components/companies/Companies";
 import { Service } from "../../components/service/Service";
 import { AboutPreview } from "../../components/about-preview/AboutPreview";
+import { FAQ } from "../../components/faq/FAQ";
 
 export const About = () => {
   const heroContent = {
@@ -14,7 +15,7 @@ export const About = () => {
       <Hero content={heroContent} />
       <Service />
       <AboutPreview />
-      {/* FAQ */}
+      <FAQ />
       <Companies />
     </>
   );
