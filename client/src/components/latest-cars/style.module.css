@@ -1,0 +1,49 @@
+.latest {
+  padding-block: 100px;
+  background-color: var(--dark-purple-gray);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.preview {
+  padding: 40px 25px 25px;
+  background-color: var(--light-purple-gray);
+  box-shadow: var(--shadow);
+  color: var(--white);
+}
+
+.title_and_price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.build_year_text {
+  display: flex;
+  gap: 5px;
+  color: var(--gray);
+  margin-bottom: 15px;
+}
+
+.year {
+  color: var(--white);
+}
+
+.img {
+  margin-bottom: 30px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

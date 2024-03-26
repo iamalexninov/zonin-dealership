@@ -7,6 +7,7 @@ import {
   MdKeyboardArrowRight,
   MdOutlineKeyboardArrowUp,
 } from "react-icons/md";
+import { IoMdSettings } from "react-icons/io";
 import { IoSearchOutline } from "react-icons/io5";
 import { CgClose } from "react-icons/cg";
 import {
@@ -25,6 +26,7 @@ import {
   FaPinterestP,
   FaCheck,
   FaMinus,
+  FaFlagCheckered,
 } from "react-icons/fa";
 import {
   FaRegClock,
@@ -36,6 +38,7 @@ import {
   FaCar,
   FaPhone,
   FaLocationDot,
+  FaGasPump,
 } from "react-icons/fa6";
 
 // import { useScrollOnTop } from "../../../hooks/useScrollOnTop";
@@ -80,6 +83,9 @@ export const Icon = ({ type, size = 20, baseStyle, hoverStyle, onClick }) => {
     check: FaCheck,
     plus: FaPlus,
     minus: FaMinus,
+    setting: IoMdSettings,
+    gasoline: FaGasPump,
+    flag: FaFlagCheckered,
   };
 
   const IconComponent = iconComponents[type] || null;

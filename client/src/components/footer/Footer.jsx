@@ -5,13 +5,13 @@ import { FooterBottom } from "./footer-bottom/FooterBottom";
 
 export const Footer = () => {
   return (
-    <section className={styles.footer}>
+    <footer className={styles.footer}>
       <Wrapper>
         <div className={styles.container}>
           <FooterTop />
         </div>
       </Wrapper>
       <FooterBottom />
-    </section>
+    </footer>
   );
 };
