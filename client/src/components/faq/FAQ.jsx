@@ -1,6 +1,7 @@
 import styles from "./style.module.css";
 import { Wrapper } from "../common/wrapper/Wrapper";
 import { FAQQuestions } from "./FAQQuestions";
+import { FAQImage } from "./faq-image/FAQImage";
 
 export const FAQ = () => {
   const mockdata = [
@@ -34,7 +35,10 @@ export const FAQ = () => {
   return (
     <section className={styles.faq}>
       <Wrapper>
-        <FAQQuestions list={mockdata} />
+        <div className={styles.container}>
+          <FAQQuestions list={mockdata} />
+          <FAQImage />
+        </div>
       </Wrapper>
     </section>
   );

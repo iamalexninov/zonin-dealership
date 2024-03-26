@@ -24,6 +24,7 @@ import {
   FaRoad,
   FaPinterestP,
   FaCheck,
+  FaMinus,
 } from "react-icons/fa";
 import {
   FaRegClock,
@@ -67,7 +68,6 @@ export const Icon = ({ type, size = 20, baseStyle, hoverStyle, onClick }) => {
     open: FaBars,
     search: IoSearchOutline,
     edit: FaEdit,
-    plus: FaPlus,
     car: FaCar,
     tools: FaTools,
     money: FaMoneyBill,
@@ -78,6 +78,8 @@ export const Icon = ({ type, size = 20, baseStyle, hoverStyle, onClick }) => {
     arrowRight: MdKeyboardArrowRight,
     arrowUp: MdOutlineKeyboardArrowUp,
     check: FaCheck,
+    plus: FaPlus,
+    minus: FaMinus,
   };
 
   const IconComponent = iconComponents[type] || null;

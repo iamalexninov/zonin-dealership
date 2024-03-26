@@ -1,8 +1,9 @@
+import styles from "./style.module.css";
 import { FAQQuestion } from "./FAQQuestion";
 
 export const FAQQuestions = ({ list }) => {
   return (
-    <ul>
+    <ul className={styles.list}>
       {list.map((item) => (
         <FAQQuestion
           key={item.question}

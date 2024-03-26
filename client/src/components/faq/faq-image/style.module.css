@@ -1,0 +1,9 @@
+.img_box {
+  width: 100%;
+  max-width: 600px;
+}
+
+.poster {
+  object-fit: cover;
+  border-radius: 5px;
+}
